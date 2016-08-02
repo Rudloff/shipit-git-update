@@ -21,7 +21,7 @@ module.exports = function (shipit) {
         staging: {
             deployTo: '/path/to/working/copy/',
             branch: 'master',
-            servers: 'user@qexample.com',
+            servers: 'user@example.com',
             postUpdateCmd: 'foobar'
         }
     });
@@ -48,7 +48,7 @@ module.exports = function (grunt) {
             staging: {
                 deployTo: '/path/to/working/copy/',
                 branch: 'master',
-                servers: 'user@qexample.com',
+                servers: 'user@example.com',
                 postUpdateCmd: 'foobar'
             }
         }
