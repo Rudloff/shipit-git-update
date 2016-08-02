@@ -8,7 +8,7 @@ module.exports = function (gruntOrShipit) {
         var shipit = utils.getShipit(gruntOrShipit);
 
         function checkout() {
-            shipit.log('Checking out "%s"', shipit.config.branch);
+            shipit.log('Updating "%s"', shipit.config.branch);
 
             return shipit.remote('cd ' + shipit.config.deployTo + ' && git pull')
                 .then(function () {
