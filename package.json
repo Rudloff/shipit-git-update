@@ -2,6 +2,7 @@
 	"name": "shipit-git-update",
 	"description": "Set of deployment tasks for Shipit used to update a distant Git working copy",
 	"license": "GPL-3.0",
+	"version": "0.1.0",
 	"repository": "https://github.com/Rudloff/shipit-git-update.git",
 	"dependencies": {
 		"shipit-utils": "~1.3.1",
