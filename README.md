@@ -1,6 +1,6 @@
 # shipit-git-update
 
-This shipit task connects to a remote server pulls update to a specific Git branch.
+This shipit task connects to a remote server and pulls updates to a specific Git branch.
 
 ## Install
 ```bash
