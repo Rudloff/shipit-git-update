@@ -10,7 +10,7 @@ module.exports = function (gruntOrShipit) {
         function checkout() {
             shipit.log('Checking out "%s"', shipit.config.branch);
 
-            return shipit.remote('cd ' + shipit.config.deployTo + ' && git checkout ' + shipit.config.branch)
+            return shipit.remote('cd ' + shipit.config.deployTo + '; git checkout ' + shipit.config.branch)
                 .then(function () {
                     shipit.log(chalk.green('We are now on branch ' + shipit.config.branch + '.'));
                 });
