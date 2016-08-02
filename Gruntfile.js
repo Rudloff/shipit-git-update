@@ -11,6 +11,9 @@ module.exports = function (grunt) {
             },
             tasks: {
                 src: ['tasks/*.js', 'tasks/**/*.js']
+            },
+            index: {
+                src: 'index.js'
             }
         }
     });
