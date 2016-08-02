@@ -10,7 +10,7 @@ module.exports = function (gruntOrShipit) {
         function checkout() {
             shipit.log('Running post-update command');
 
-            return shipit.remote('cd ' + shipit.config.deployTo + ' && ' + shipit.config.postUpdateCmd);
+            return shipit.remote('cd ' + shipit.config.deployTo + '; ' + shipit.config.postUpdateCmd);
         }
         return checkout();
     });

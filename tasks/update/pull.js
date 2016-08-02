@@ -10,7 +10,7 @@ module.exports = function (gruntOrShipit) {
         function checkout() {
             shipit.log('Updating "%s"', shipit.config.branch);
 
-            return shipit.remote('cd ' + shipit.config.deployTo + ' && git pull')
+            return shipit.remote('cd ' + shipit.config.deployTo + '; git pull')
                 .then(function () {
                     shipit.log(chalk.green('Up-to-date 😊'));
                 });
