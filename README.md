@@ -4,7 +4,7 @@ This shipit task connects to a remote server and pulls updates to a specific Git
 
 ## Install
 ```bash
-npm install shipit-deploy
+npm install shipit-git-update
 ```
 
 ## Usage
