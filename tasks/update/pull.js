@@ -7,7 +7,7 @@ module.exports = function (gruntOrShipit) {
     utils.registerTask(gruntOrShipit, 'update:pull', function () {
         var shipit = utils.getShipit(gruntOrShipit);
 
-        function checkout() {
+        function pull() {
             shipit.log('Updating "%s"', shipit.config.branch);
 
             return shipit.remote('cd ' + shipit.config.deployTo + '; git pull')
@@ -15,6 +15,6 @@ module.exports = function (gruntOrShipit) {
                     shipit.log(chalk.green('Up-to-date 😊'));
                 });
         }
-        return checkout();
+        return pull();
     });
 };
