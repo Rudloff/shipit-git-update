@@ -8,9 +8,10 @@ module.exports = function (gruntOrShipit) {
         var shipit = utils.getShipit(gruntOrShipit);
 
         function checkout() {
-            shipit.log('Running post-update command');
-
-            return shipit.remote('cd ' + shipit.config.deployTo + '; ' + shipit.config.postUpdateCmd);
+            if (shipit.config.postUpdateCmd) {
+                shipit.log('Running post-update command');
+                return shipit.remote('cd ' + shipit.config.deployTo + '; ' + shipit.config.postUpdateCmd);
+            }
         }
         return checkout();
     });

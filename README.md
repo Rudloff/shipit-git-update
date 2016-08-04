@@ -1,6 +1,6 @@
 # shipit-git-update
 
-This shipit task connects to a remote server pulls update to a specific Git branch.
+This shipit task connects to a remote server and pulls updates to a specific Git branch.
 
 ## Install
 ```bash
@@ -21,7 +21,7 @@ module.exports = function (shipit) {
         staging: {
             deployTo: '/path/to/working/copy/',
             branch: 'master',
-            servers: 'user@qexample.com',
+            servers: 'user@example.com',
             postUpdateCmd: 'foobar'
         }
     });
@@ -48,7 +48,7 @@ module.exports = function (grunt) {
             staging: {
                 deployTo: '/path/to/working/copy/',
                 branch: 'master',
-                servers: 'user@qexample.com',
+                servers: 'user@example.com',
                 postUpdateCmd: 'foobar'
             }
         }
