@@ -4,7 +4,7 @@ var utils = require('shipit-utils');
 var chalk = require('chalk');
 
 module.exports = function (gruntOrShipit) {
-    utils.registerTask(gruntOrShipit, 'update:checkout', function () {
+    utils.registerTask(gruntOrShipit, 'update:checkout', 'Checkout a specific Git branch on the remote host', function () {
         var shipit = utils.getShipit(gruntOrShipit);
 
         function checkout() {
